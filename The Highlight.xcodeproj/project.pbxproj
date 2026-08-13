@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C74772932FF42C0600CB2FAF /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = C74772922FF42C0600CB2FAF /* Supabase */; };
+		C74957552FFC277500D9B4C9 /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = C74957532FFC277500D9B4C9 /* AGENTS.md */; };
+		C74957562FFC277500D9B4C9 /* BACKLOG.md in Resources */ = {isa = PBXBuildFile; fileRef = C74957542FFC277500D9B4C9 /* BACKLOG.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C74772512FF3106E00CB2FAF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +33,26 @@
 		C74772432FF3106C00CB2FAF /* The Highlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Highlight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74772502FF3106E00CB2FAF /* The HighlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The HighlightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C747725A2FF3106E00CB2FAF /* The HighlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The HighlightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74957532FFC277500D9B4C9 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
+		C74957542FFC277500D9B4C9 /* BACKLOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BACKLOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C747728E2FF31C3B00CB2FAF /* Exceptions for "The Highlight" folder in "The Highlight" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewModels/TestViewModel.swift,
+			);
+			target = C74772422FF3106C00CB2FAF /* The Highlight */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C74772452FF3106C00CB2FAF /* The Highlight */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C747728E2FF31C3B00CB2FAF /* Exceptions for "The Highlight" folder in "The Highlight" target */,
+			);
 			path = "The Highlight";
 			sourceTree = "<group>";
 		};
@@ -52,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74772932FF42C0600CB2FAF /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +97,12 @@
 		C747723A2FF3106C00CB2FAF = {
 			isa = PBXGroup;
 			children = (
+				C74957532FFC277500D9B4C9 /* AGENTS.md */,
+				C74957542FFC277500D9B4C9 /* BACKLOG.md */,
 				C74772452FF3106C00CB2FAF /* The Highlight */,
 				C74772532FF3106E00CB2FAF /* The HighlightTests */,
 				C747725D2FF3106E00CB2FAF /* The HighlightUITests */,
+				C74772912FF42C0600CB2FAF /* Frameworks */,
 				C74772442FF3106C00CB2FAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +115,13 @@
 				C747725A2FF3106E00CB2FAF /* The HighlightUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C74772912FF42C0600CB2FAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +144,7 @@
 			);
 			name = "The Highlight";
 			packageProductDependencies = (
+				C74772922FF42C0600CB2FAF /* Supabase */,
 			);
 			productName = "The Highlight";
 			productReference = C74772432FF3106C00CB2FAF /* The Highlight.app */;
@@ -195,6 +228,9 @@
 			);
 			mainGroup = C747723A2FF3106C00CB2FAF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C74772792FF315C100CB2FAF /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C74772442FF3106C00CB2FAF /* Products */;
 			projectDirPath = "";
@@ -212,6 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74957552FFC277500D9B4C9 /* AGENTS.md in Resources */,
+				C74957562FFC277500D9B4C9 /* BACKLOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,10 +428,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F47TX764RT;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Highlight-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -432,10 +472,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F47TX764RT;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Highlight-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -605,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C74772792FF315C100CB2FAF /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C74772922FF42C0600CB2FAF /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C74772792FF315C100CB2FAF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C747723B2FF3106C00CB2FAF /* Project object */;
 }
